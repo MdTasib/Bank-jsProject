@@ -14,13 +14,52 @@
 <body>
     <header>
         <div class="container">
-            <div class="login-area">
+            <div id="login-area">
                 <h2 class="title text-center">wellcome to meony bank</h2>
                 <div class="submit-area">
                     <h4>Login</h4>
                     <input type="email" id="" placeholder="Enter Your Email">
                     <input type="password" id="" placeholder="Your Password">
-                    <button id="btn" type="submit">Log In</button>
+                    <button id="btn" class="btn" type="submit">Log In</button>
+                </div>
+            </div>
+            <div id="transaction-area">
+                <h2 class="title text-center">Transaction Area</h2>
+                <div class="row section-pad">
+                    <div class="col-md-4">
+                        <div class="text-center basic-box-style deposit">
+                            <h5>Deposit</h5>
+                            <h2>$ <span id="currentDeposit">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center basic-box-style withdraw">
+                            <h5>Withdraw</h5>
+                            <h2>$ <span id="currentWithdraw">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center basic-box-style balance">
+                            <h5>Balance</h5>
+                            <h2>$ <span id="currentBalance">1000</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-pad">
+                    <div class="col-md-6">
+                        <div class="submit-area">
+                            <h4>Deposit</h4>
+                            <input id="depositAmount" type="text" placeholder="$ Amount you want to deposit">
+                            <button id="addDeposit" class="btn" type="submit">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="submit-area">
+                            <h4>Withdraw</h4>
+                            <input id="withdrawAmount" type="text" placeholder="$ Amount you want to withdraw" id="">
+                            <button id="addWithdraw" class="btn" type="submit">Withdraw</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
